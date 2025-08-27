@@ -1,0 +1,124 @@
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f7f7;
+
+  &-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b3350;
+    margin-bottom: 20px;
+  }
+
+  .contact-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  &-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2b3350;
+    margin-bottom: 25px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .contact-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+      .contact-label {
+        flex: 1;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        color: #555;
+        text-align: left;
+
+        span {
+          margin-bottom: 6px;
+          font-weight: 500;
+        }
+
+        .contact-input {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #ccc;
+          padding: 6px 0;
+
+          .icon {
+            color: #aaa;
+            margin-right: 8px;
+            font-size: 18px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 15px;
+            color: #364C76;
+            background: transparent;
+
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-text {
+      font-size: 16px;
+      color: #364C76;
+      text-align: left;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      resize: none;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #f9f9f9;
+      font-size: 15px;
+      outline: none;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    .btn {
+      align-self: center;
+      background: #00c5de;
+      color: #fff;
+      border: none;
+      padding: 12px 40px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid #00c5de;
+        color: #00c5de;
+      }
+    }
+  }
+}
